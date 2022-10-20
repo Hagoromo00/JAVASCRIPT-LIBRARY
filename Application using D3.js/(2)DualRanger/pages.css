@@ -1,4 +1,6 @@
-html,body{
+/* html pages ------------------------------ */
+html,
+body{
 	margin: 0;
 	padding: 0;
 }
@@ -47,20 +49,23 @@ footer{
 footer > a {
 	color: grey;
 }
+/* graph ------------------------------ */
+
 .links line {
 	stroke: #999;
 	stroke-opacity: 0.6;
   }
   
   .nodes circle {
-	stroke: rgb(11, 10, 10);
+	stroke: #fff;
 	stroke-width: 1.5px;
   }
   .nodes circle:hover {
 	r: 10;
-	stroke: rgb(255, 221, 0);
+	stroke: grey;
   }
-/* slider ------------------------------ */
+  
+  /* slider ------------------------------ */
 
 .slider-holder{
 	width: 700px;
@@ -76,7 +81,7 @@ footer > a {
   }
   
   .track {
-	stroke: rgb(23, 52, 25);
+	stroke: #bbb;
 	stroke-width: 10px;
   }
   
@@ -105,4 +110,4 @@ footer > a {
 	fill: #4DD0E1;
   }
   
-	
+  
