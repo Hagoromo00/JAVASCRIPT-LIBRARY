@@ -1,0 +1,108 @@
+html,body{
+	margin: 0;
+	padding: 0;
+}
+body{
+  color: black;
+  background-color: white; 
+  background-image: url("bg.gif");
+}
+.header{
+	position: relative;
+	margin: 10px;
+	padding: 20px;
+	border: solid 1px silver;
+	background-color: #ffffff;
+	width: 760px;
+	height: 55px;
+}
+svg {	
+	user-select: none;
+}
+h1{
+	font-size: 18px;
+	margin: 0;
+}
+
+.github{
+	position:absolute;
+	top: 18px;
+	right: 16px;
+	text-align: right;
+}
+.github > a{
+	color: #0099cc;
+	text-decoration: none;
+}
+#graph {
+	background-color: white;
+	border: solid 1px silver;
+	border-radius: 5px;
+	margin: 0 10px;
+}
+footer{
+	margin: 20px;
+	color: grey;
+}
+footer > a {
+	color: grey;
+}
+.links line {
+	stroke: #999;
+	stroke-opacity: 0.6;
+  }
+  
+  .nodes circle {
+	stroke: rgb(11, 10, 10);
+	stroke-width: 1.5px;
+  }
+  .nodes circle:hover {
+	r: 10;
+	stroke: rgb(255, 221, 0);
+  }
+/* slider ------------------------------ */
+
+.slider-holder{
+	width: 700px;
+  }
+  .ticks {
+	font: 14px sans-serif;
+  }
+  
+  .track,
+  .track-inset,
+  .track-overlay {
+	stroke-linecap: round;
+  }
+  
+  .track {
+	stroke: rgb(23, 52, 25);
+	stroke-width: 10px;
+  }
+  
+  .track-overlay {
+	pointer-events: stroke;
+	stroke-width: 50px;
+	cursor: crosshair;
+  }
+  
+  .sel-range{
+	stroke: #9CCC65;
+	stroke-width: 8px;
+  }
+  
+  .handle {
+	fill: #E0F7FA;
+	stroke: #000;
+	stroke-opacity: 0.5;
+	stroke-width: 1.25px;
+	cursor: pointer;
+  }
+  .handle:hover{
+	  fill: #B2EBF2;
+  }
+  .handle.active {
+	fill: #4DD0E1;
+  }
+  
+	

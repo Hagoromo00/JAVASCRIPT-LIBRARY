@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {packages:['wordtree']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable( 
+          [ ['Phrases', { role: 'style' }],
+            ['Programmer are better Hacker', 'red'],
+            ['Programmer are better Hacker who do bad things', 'red'],
+            ['Programmer are better Hacker who do bad things will be arrested by the authorities', 'red'],
+            ['Programmer eat Rice' ,'red'],
+            ['Programmer are better than Cracker','red'],
+            ['Programmer are better than Cracker who make a mess','red'],
+            ['Programmer are better than Cracker who make a mess will be arrested by the authorities','red'],
+            ['Programmer are awesome','red'],
+            ['Programmer are awesome smart and careful','red'],
+            ['Programmer are awesome smart and careful smart and diligent person','red'],
+            ['Programmer are people too','red'],
+            ['Programmer are people too who carry out human activities in general','red'],
+            ['Programmer eat Meatball','red'],  
+            ['Programmer do Coding','red'],
+            ['Programmers in the likes of many people','red'],
+            ['Programmer eat pizza','red'],
+            ['Programmers in the favor of many office people','red'],
+            ['Programmer eat Carrot','red'],
+            ['Programmer do Deploying','red'],
+            ['Programmer are family','red'],
+            ['Programmer eat pizza','red'],
+            ['Programmer are better than Hacker','red'],
+            ['Programmer are strong people','red'],
+            ['Programmer are weird','red'],
+            ['Programmer eat pizza','red'],
+            ['Programmer eat pizza better than burger','red'],
+            ['Programmer eat pizza strong than spageti','red'],
+            ['Programmer do sweet things','red'],
+            ['Programmer do gym than people','red'],
+          ]
+        );
+
+        var options = {  
+          FontSize: 30,
+          backgroundColor : '#223CE9',
+          wordtree: {
+            format: 'implicit',
+            type:'suffix',
+            word: 'Programmer',
+            fontName : 'Times-Roman',
+          
+          }
+
+          
+        };
+
+        var chart = new google.visualization.WordTree(document.getElementById('wordtree_basic'));
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="wordtree_basic" style="width: 1250px; height: 550px;"> 
+          
+    </div>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {packages:["orgchart"]});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Name');
+        data.addColumn('string', 'Job');
+        data.addColumn('string', 'ToolTip');
+
+        data.addRows([
+          [{'v':'Family', 'f':'Family<div style="color:red; font-style:Times-Roman"></div>'},
+           '', 'Family'], 
+           
+           [{'v':'Ryan', 'f':'Ryan<div style="color:red; font-style:Times-Roman">Father</div>'},
+           'Family', 'Head Of Family'], 
+
+          [{'v':'Maya', 'f':'Maya<div style="color:red; font-style:Times-Roman">Mother</div>'},
+           'Family', 'Mother'],
+           
+          [{'v':'Dika', 'f':'Dika<div style="color:blue; font-style:Times-Roman">Child</div>'},
+           'Ryan', 'Child'],
+
+          [{'v':'Cindy', 'f':'Cindy<div style="color:blue; font-style:Times-Roman">Child</div>'},
+           'Ryan', 'Child'],
+
+           [{'v':'Claudia', 'f':'Claudia<div style="color:blue; font-style:Times-Roman">Child</div>'},
+           'Maya', 'Child'],
+
+           [{'v':'Martha', 'f':'Martha<div style="color:blue; font-style:Times-Roman">Child</div>'},
+           'Maya', 'Child'],
+           [{'v':'Bruno', 'f':'Bruno<div style="color:blue; font-style:Times-Roman">Child</div>'},
+           'Maya', 'Child'],
+        ]);
+
+        var chart = new google.visualization.OrgChart(document.getElementById('chart_div'));
+        chart.draw(data, {'allowHtml':true});
+      }
+   </script>
+    </head>
+  <body>
+    <div id="chart_div"></div>
+  </body>
+</html>
